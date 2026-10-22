@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anywhere Referral CRM — Aliona Zayka</title>
+<meta name="description" content="Anywhere Referral CRM — Aliona Zayka">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;family=Raleway:wght@500;600;800&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#1E1E1E}a:hover{color:#4A6B3F}
+h1,h2,h3{font-family:'Raleway',sans-serif}
+.cs-img{display:block;width:calc(100vw - 64px);max-width:none;margin-left:50%;transform:translateX(-50%);height:auto}
+@media (max-width:768px){h1[style*="font-size: 46px"],h2[style*="font-size: 46px"]{font-size:44px !important}h2[style*="font-size: 30px"]{font-size:28px !important}h2[style*="font-size: 28px"]{font-size:26px !important}}
+@media (max-width:800px){#contact a[style*="font-size: 50px"]{font-size:48px !important}}
+.burger{display:none;background:none;border:0;padding:10px;margin:-10px;cursor:pointer;flex-direction:column;justify-content:center;gap:5px}
+.burger span{display:block;width:24px;height:2px;border-radius:2px;background:#1E1E1E;transition:transform .25s ease,opacity .2s ease}
+.burger[data-open="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger[data-open="true"] span:nth-child(2){opacity:0}
+.burger[data-open="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media (max-width:600px){.burger{display:flex}.nav-links{position:absolute;top:100%;left:8px;right:8px;z-index:1;display:flex !important;flex-direction:column;gap:20px !important;padding:24px 28px 32px;background:#C8E1C1;height:calc(100vh - 100% - 8px);height:var(--mh,calc(100dvh - 100% - 8px));border-radius:0 0 4px 4px;box-sizing:border-box;overflow-y:auto;opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .25s ease,transform .25s ease,visibility .25s}.nav-links a{font-size:22px !important}.nav-links[data-open="true"]{opacity:1;visibility:visible;transform:none}nav:has(.nav-links[data-open="true"]){background:#FFFFFF !important;box-shadow:none !important}nav:has(.nav-links[data-open="true"])::before{content:"";position:absolute;top:8px;left:8px;right:8px;bottom:0;z-index:-1;background:#C8E1C1;border-radius:4px 4px 0 0}}
+@media (max-width:768px){#contact a[style*="font-size: 50px"]{font-size:46px !important}}
+@media (max-width:768px){footer#contact[style]{gap:60px !important}#contact div[style*="gap: 56px"]{gap:40px !important}}
+@media (max-width:600px){h1[style]{font-size:42px !important}nav + section{margin-top:4px !important}}
+@media (max-width:600px){:not(section) > .cs-img{margin-top:-24px !important;margin-bottom:-24px !important}section > .cs-img:not(:first-child){margin-top:16px !important}section > .cs-img:not(:last-child){margin-bottom:16px !important}}
+@media (max-width:600px){section:not([style*="background"]):has(+ footer#contact){margin-bottom:0 !important}section:not([style*="background"]) + footer#contact{margin-top:4px !important}}
+</style>
+</head>
+<body>
+<div style="font-family: 'Poppins', sans-serif; font-weight: 400; color: #2B2B2B; background: #FFFFFF; padding: 8px; box-sizing: border-box; display: flex; flex-direction: column; gap: 56px">
+  <nav style="position: sticky; top: 0; z-index: 20; background: #FFFFFF; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; padding: 16px 32px; margin: -8px -8px 0; box-shadow: 0 1px 0 rgba(30,30,30,0.06)">
+    <a href="index.html" style="font-size: 20px; font-weight: 600; text-decoration: none">Aliona Zayka</a>
+    <button type="button" class="burger" aria-label="Menu" data-open="false"><span></span><span></span><span></span></button>
+      <div class="nav-links" data-open="false" style="--mh: calc(100dvh - 100% - 8px); display: flex; flex-wrap: wrap; gap: 36px; font-size: 18px">
+      <a href="index.html#works" style="text-decoration: none">Works</a>
+      <a href="#contact" style="text-decoration: none">Contact Me</a>
+      <a href="https://docs.google.com/document/d/18gu0CPlLcSZdGx0YkIKblBVxe1flH6p7cDJ2k713zyo/edit?usp=sharing" target="_blank" rel="noopener noreferrer" style="text-decoration: none">Download CV</a>
+    </div>
+  </nav>
+
+  <section style="width: 100%; max-width: 900px; margin: 24px auto 0; padding: 0 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+    <h1 style="margin: 0; font-size: 46px; line-height: 1.15; font-weight: 800">Anywhere Referral CRM</h1>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #383838">EPAM Anywhere, EPAM Systems' remote working initiative, introduced a new referral program in 2021 specifically designed for freelance recruiters who could recommend candidates and earn a bonus if hired.</p>
+    <h3 style="margin: 16px 0 0; font-size: 20px; font-weight: 800">Task</h3>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #383838">My goal was to design an MVP that would enhance the transparency of the hiring process, providing clarity on the candidate's progress within the pipeline.</p>
+  </section>
+
+  <img class="cs-img" src="images/anywhere-referral-img.webp" alt="Referral pipeline with candidate statuses and filters">
+
+  <section style="width: 100%; max-width: 900px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+    <h2 style="margin: 0; font-size: 30px; font-weight: 800">Design process</h2>
+    <h3 style="margin: 8px 0 0; font-size: 20px; font-weight: 800">Problem definition</h3>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #383838">As freelance recruiters were already working with EPAM, I had the opportunity to interview them and understand the challenges they face when referring candidates through the old Telescope platform, as well as how their work could be made easier. This is how I identified the key issues:</p>
+    <ul style="margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 12px; font-size: 17px; line-height: 1.6; color: #383838">
+      <li>Significant rejection rate for referrals without providing an explanation.</li>
+      <li>It is not obvious which specialists are worth referring, because the job description is unclear.</li>
+      <li>The current stage of the interview process for the candidate remains unclear.</li>
+      <li>There were numerous bugs on the previous platform, which often caused interruptions during the candidate card filling process. As a result, the recruiters had to start filling out all the information again from scratch.</li>
+    </ul>
+    <h3 style="margin: 24px 0 0; font-size: 20px; font-weight: 800">Ideation &amp; Prototyping</h3>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #383838">Taking into account the issues that need to be solved, the manager, business analyst, and I conducted desk research, competitor analysis, and brainstorming sessions in addition to interviews to determine the initial functionality for the MVP.</p>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #383838">I created low-fidelity prototypes to demonstrate the key features and functions of the system and illustrate the intended flow of user interaction. This enabled me to engage in discussions with the manager, collect their feedback, and implement necessary improvements to enhance the user experience.</p>
+  </section>
+  <img class="cs-img" src="images/anywhere-referral-img-1.webp" alt="Low-fidelity prototypes">
+
+  <section style="width: 100%; max-width: 900px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #383838">After that, I started assembling layouts for usability testing using the components of the <a href="design-system.html">Anywhere Design System</a> I had already created.</p>
+    <h3 style="margin: 24px 0 0; font-size: 20px; font-weight: 800">User voice</h3>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #383838">After performing several moderated and unmoderated usability tests among freelance recruiters, I explored hypotheses and concepts to evaluate the effectiveness and usability of the interfaces created. The feedback I received helped me propose solutions that improve the user experience.</p>
+  </section>
+  <img class="cs-img" src="images/anywhere-referral-img-2.webp" alt="Usability testing synthesis board">
+
+  <section style="width: 100%; max-width: 900px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+    <h2 style="margin: 0; font-size: 30px; font-weight: 800">Results</h2>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #383838">I developed user scenarios for various components of the Anywhere Referral program, including onboarding and candidate referral. Additionally, I implemented a pipeline with statuses to monitor the interview process stage for each candidate and showcase feedback. Furthermore, I designed a job list and profile.</p>
+  </section>
+  <img class="cs-img" src="images/anywhere-referral-img-3.webp" alt="Statistics, rules, empty state and candidate profile">
+
+  <section style="width: 100%; max-width: 900px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+    <h3 style="margin: 0; font-size: 20px; font-weight: 800">Pipeline</h3>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #383838">A pipeline was put in the header so that the recruiter could understand where his candidates were at the moment, when the last changes were made.</p>
+    <h3 style="margin: 24px 0 0; font-size: 20px; font-weight: 800">Referral process</h3>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #383838">The candidate submission process was divided into four steps, which included an automatic check to ensure the candidate's presence in the system, as well as the availability of vacancies matching their skills and location. This efficient process eliminates the risk of the recruiter referring unsuitable candidates, and provides immediate feedback if the candidate is not a suitable fit.</p>
+    <div style="margin-top: 16px; max-width: 360px"><div style="font-size: 32px; font-weight: 500">80%</div><div style="font-size: 16px; line-height: 1.5; color: #4F4F4F">These enhancements streamlined referrals, significantly reducing candidate rejections.</div></div>
+  </section>
+  <img class="cs-img" src="images/anywhere-referral-img-4.webp" alt="Four-step candidate referral flow">
+
+  <footer id="contact" style="background: #1E1E1E; border-radius: 4px; color: #FFFFFF; padding: 32px 28px 28px; box-sizing: border-box; display: flex; flex-direction: column; gap: 96px">
+    <div style="display: flex; flex-direction: column; gap: 12px">
+      <h2 style="margin: 0; font-family: 'Raleway', sans-serif; font-size: 28px; font-weight: 600">Have a project in mind?</h2>
+      <p style="margin: 0; font-size: 18px; line-height: 1.45; font-weight: 300; color: #878787; max-width: 600px">Don’t hesitate to get in touch. I’m currently based in Warsaw, Poland (GMT+2) and open to remote opportunities.</p>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+      <div style="display: flex; flex-wrap: wrap; gap: 56px">
+        <a href="https://www.linkedin.com/in/zayka-aliona/" target="_blank" rel="noopener noreferrer" style="color: #DCEBA6; font-size: 50px; font-weight: 500; text-decoration: none; font-family: 'Raleway', sans-serif; display: flex; align-items: baseline; gap: 14px">LinkedIn <svg aria-hidden="true" width="36" height="36" style="position: relative; top: 6px" viewBox="0 0 36 36" fill="none"><path d="M28 23.3846V8H12.6154M28 8L8 28" stroke="#D7E1A7" stroke-width="4"></path></svg></a>
+        <a href="mailto:[YOUR EMAIL]" style="color: #DCEBA6; font-size: 50px; font-weight: 500; text-decoration: none; font-family: 'Raleway', sans-serif; display: flex; align-items: baseline; gap: 14px">Email <svg aria-hidden="true" width="36" height="36" style="position: relative; top: 6px" viewBox="0 0 36 36" fill="none"><path d="M28 23.3846V8H12.6154M28 8L8 28" stroke="#D7E1A7" stroke-width="4"></path></svg></a>
+      </div>
+      <span style="font-size: 14px; color: #9A9A9A">© 2026</span>
+    </div>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var burger = document.querySelector('.burger');
+  var links = document.querySelector('.nav-links');
+  function setOpen(open){
+    if(!burger||!links) return;
+    if(open){
+      var nav = burger.closest('nav');
+      var vh = Math.min(window.innerHeight||Infinity,(window.visualViewport&&window.visualViewport.height)||Infinity);
+      if(nav&&isFinite(vh)) links.style.setProperty('--mh', Math.max(200, Math.round(vh - Math.max(0, nav.getBoundingClientRect().bottom) - 8)) + 'px');
+    }
+    burger.setAttribute('data-open', String(open));
+    links.setAttribute('data-open', String(open));
+    burger.setAttribute('aria-expanded', String(open));
+  }
+  if(burger) burger.addEventListener('click', function(){ setOpen(burger.getAttribute('data-open') !== 'true'); });
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var el = document.getElementById(a.getAttribute('href').slice(1));
+      if(!el) return;
+      e.preventDefault(); setOpen(false);
+      el.scrollIntoView({behavior:'smooth', block:'start'});
+      history.replaceState(null,'',a.getAttribute('href'));
+    });
+  });
+  window.addEventListener('resize', function(){ if(window.innerWidth > 600) setOpen(false); });
+})();
+</script>
+</body>
+</html>

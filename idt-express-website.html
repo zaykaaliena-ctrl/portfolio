@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IDT Express website — Aliona Zayka</title>
+<meta name="description" content="IDT Express website — Aliona Zayka">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&amp;family=Raleway:wght@500;600;700;800&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#1E1E1E}a:hover{color:#4A6B3F}
+h1,h2,h3{font-family:'Raleway',sans-serif}
+.cs-img{display:block;width:calc(100vw - 64px);max-width:none;margin-left:50%;transform:translateX(-50%);height:auto}
+@media (max-width:768px){h1[style*="font-size: 46px"],h2[style*="font-size: 46px"]{font-size:44px !important}h2[style*="font-size: 30px"]{font-size:28px !important}h2[style*="font-size: 28px"]{font-size:26px !important}}
+@media (max-width:800px){#contact a[style*="font-size: 50px"]{font-size:48px !important}}
+.burger{display:none;background:none;border:0;padding:10px;margin:-10px;cursor:pointer;flex-direction:column;justify-content:center;gap:5px}
+.burger span{display:block;width:24px;height:2px;border-radius:2px;background:#1E1E1E;transition:transform .25s ease,opacity .2s ease}
+.burger[data-open="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger[data-open="true"] span:nth-child(2){opacity:0}
+.burger[data-open="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+@media (max-width:600px){.burger{display:flex}.nav-links{position:absolute;top:100%;left:8px;right:8px;z-index:1;display:flex !important;flex-direction:column;gap:20px !important;padding:24px 28px 32px;background:#C8E1C1;height:calc(100vh - 100% - 8px);height:var(--mh,calc(100dvh - 100% - 8px));border-radius:0 0 4px 4px;box-sizing:border-box;overflow-y:auto;opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .25s ease,transform .25s ease,visibility .25s}.nav-links a{font-size:22px !important}.nav-links[data-open="true"]{opacity:1;visibility:visible;transform:none}nav:has(.nav-links[data-open="true"]){background:#FFFFFF !important;box-shadow:none !important}nav:has(.nav-links[data-open="true"])::before{content:"";position:absolute;top:8px;left:8px;right:8px;bottom:0;z-index:-1;background:#C8E1C1;border-radius:4px 4px 0 0}}
+@media (max-width:768px){#contact a[style*="font-size: 50px"]{font-size:46px !important}}
+@media (max-width:768px){footer#contact[style]{gap:60px !important}#contact div[style*="gap: 56px"]{gap:40px !important}}
+@media (max-width:600px){.metrics-grid{grid-template-columns:1fr !important;row-gap:24px !important}}
+@media (max-width:600px){h1[style]{font-size:42px !important}nav + section{margin-top:4px !important}}
+@media (max-width:600px){:not(section) > .cs-img{margin-top:-24px !important;margin-bottom:-24px !important}section > .cs-img:not(:first-child){margin-top:16px !important}section > .cs-img:not(:last-child){margin-bottom:16px !important}}
+@media (max-width:600px){section:not([style*="background"]):has(+ footer#contact){margin-bottom:0 !important}section:not([style*="background"]) + footer#contact{margin-top:4px !important}}
+@media (max-width:600px){.logo-compare{grid-template-columns:1fr !important;row-gap:12px !important}.lc-old{order:1}.lc-old-t{order:2;margin-bottom:20px}.lc-new{order:3}.lc-new-t{order:4}}
+@media (max-width:600px){div > *:has(+ section[style*="background"]),div > .cs-img.cs-img:has(+ section[style*="background"]){margin-bottom:0 !important}div > section[style*="background"]{margin-top:-16px !important}}
+.cs-shadow{box-shadow:0 3px 12.64px rgba(96,90,76,.07),0 29.69px 42.44px rgba(96,90,76,.0083),0 125px 190px rgba(96,90,76,.0007)}
+.cs-img.cs-content{width:100%;max-width:100%;margin-left:0;transform:none}
+</style>
+</head>
+<body>
+<div style="font-family: 'Poppins', sans-serif; font-weight: 400; color: #2B2B2B; background: #FFFFFF; padding: 8px; box-sizing: border-box; display: flex; flex-direction: column; gap: 56px">
+  <nav style="position: sticky; top: 0; z-index: 20; background: #FFFFFF; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; padding: 16px 32px; margin: -8px -8px 0; box-shadow: 0 1px 0 rgba(30,30,30,0.06)">
+    <a href="index.html" style="font-size: 20px; font-weight: 600; text-decoration: none">Aliona Zayka</a>
+    <button type="button" class="burger" aria-label="Menu" data-open="false"><span></span><span></span><span></span></button>
+      <div class="nav-links" data-open="false" style="--mh: calc(100dvh - 100% - 8px); display: flex; flex-wrap: wrap; gap: 36px; font-size: 18px">
+      <a href="index.html#works" style="text-decoration: none">Works</a>
+      <a href="#contact" style="text-decoration: none">Contact Me</a>
+      <a href="https://docs.google.com/document/d/18gu0CPlLcSZdGx0YkIKblBVxe1flH6p7cDJ2k713zyo/edit?usp=sharing" target="_blank" rel="noopener noreferrer" style="text-decoration: none">Download CV</a>
+    </div>
+  </nav>
+
+  <section style="width: 100%; max-width: 900px; margin: 24px auto 0; padding: 0 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+    <h1 style="margin: 0; font-size: 46px; line-height: 1.15; font-weight: 800">IDT Express website</h1>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #383838">IDT Express, a division of IDT Carrier Services, is a worldwide provider of wholesale voice and DID services to businesses. The company’s website aims to attract customers and promote its services.</p>
+    <h3 style="margin: 16px 0 0; font-size: 20px; font-weight: 800">Tasks</h3>
+    <ul style="margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 10px; font-size: 17px; line-height: 1.6; color: #383838">
+      <li>Improve the visual design and usability of the website through a redesign.</li>
+      <li>Transfer lead generation tools for detecting phone numbers to spam and call cost calculators from the existing Bring Your Own Carrier platform.</li>
+    </ul>
+  </section>
+
+  <img class="cs-img" src="images/idt-express-website-frame.webp" alt="Old IDT Express website pages">
+
+  <section style="width: 100%; max-width: 900px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+    <h2 style="margin: 0; font-size: 30px; font-weight: 800">Problems</h2>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #383838">An interview with a stakeholder, studying GA, and conducting a UX/UI audit helped me identify critical issues on the website, which led to the service actively losing potential customers.</p>
+    <ul style="margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 10px; font-size: 17px; line-height: 1.6; color: #383838">
+      <li>The high bounce rate, which was 60% on desktop and 90% on mobile, is due to poor responsiveness.</li>
+      <li>There were many content duplicates on the pages that do not reveal the value of the products.</li>
+      <li>The pages had a slow load speed, causing users to see broken and uncoordinated content.</li>
+      <li>The design was outdated and violates rules of composition, color, rhythm, and proximity of elements. As a result, the content is difficult to perceive.</li>
+      <li>The main source of traffic to the site was paid ads campaigns in the blog. However, only 25% of these users stay on the site and navigate to other pages.</li>
+    </ul>
+    <h2 style="margin: 24px 0 0; font-size: 30px; font-weight: 800">Redesign process</h2>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #383838">I prepared a new information architecture for the website, which included tools from BYOC. The business decided to combine these services.</p>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #383838">Also I made a site mapping, built a roadmap table, and estimated the scope of work. The workflow was based on Kanban. During the design negotiation phase with the product owner, the developers were involved in discussions about feature implementation. Afterward, I documented all points by writing design specifications.</p>
+  </section>
+
+  <img class="cs-img" src="images/idtw-img-7-v2.webp" alt="Sitemap and roadmap table">
+
+  <section style="width: 100%; max-width: 900px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+    <h3 style="margin: 0; font-size: 20px; font-weight: 800">Logo &amp; Concept</h3>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #383838">I updated the logo because the current one was outdated. The spacing between the letters was unequal and the lines of the sign were chaotic with unclear directions. Therefore, I created several new versions. The stakeholders decided to choose an improved version of the current logo in order to keep the service recognizable.</p>
+    <div class="logo-compare" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 32px; margin-top: 16px; align-items: center; font-size: 15px; line-height: 1.5; color: #4F4F4F">
+      <img class="lc-old" src="images/idt-express-website-logo.webp" alt="Old IDT Express logo" style="display: block; width: 100%; max-width: 300px; height: auto">
+      <img class="lc-new" src="images/idt-express-website-logo-1.webp" alt="New IDT Express logo" style="display: block; width: 100%; max-width: 310px; height: auto">
+      <div class="lc-old-t" style="align-self: start">Chaotic lines, different line sizes and letter spacing, low-contrast yellow, outdated</div>
+      <div class="lc-new-t" style="align-self: start">Continuity, line balance, simplicity, high-contrast yellow</div>
+    </div>
+    <img class="cs-img cs-content" src="images/idtw-img-1-v2.webp" alt="New IDT Express homepage hero">
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #383838">This version features a light, airy style with bright colors that convey friendliness and modernity. I chose Red Hat Display for headings — its geometric shapes draw attention — while Poppins was used for body text, adding a softer, more professional feel.</p>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #383838">The color scheme is based on a Split Complementary palette, which helped highlight key elements and associate each product with a distinct color, making them easily recognizable for users.</p>
+    <div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; margin-top: 8px">
+      <div style="display: flex; flex-direction: column; gap: 8px"><div style="height: 72px; border-radius: 4px; background: #15191F"></div><div style="font-size: 14px; color: #383838">Dark Grey<br><span style="color: #878787">#15191F</span></div></div>
+      <div style="display: flex; flex-direction: column; gap: 8px"><div style="height: 72px; border-radius: 4px; background: #451E94"></div><div style="font-size: 14px; color: #383838">Purple<br><span style="color: #878787">#451E94</span></div></div>
+      <div style="display: flex; flex-direction: column; gap: 8px"><div style="height: 72px; border-radius: 4px; background: #F9D054"></div><div style="font-size: 14px; color: #383838">Yellow<br><span style="color: #878787">#F9D054</span></div></div>
+      <div style="display: flex; flex-direction: column; gap: 8px"><div style="height: 72px; border-radius: 4px; background: #79C0F0"></div><div style="font-size: 14px; color: #383838">Blue<br><span style="color: #878787">#79C0F0</span></div></div>
+      <div style="display: flex; flex-direction: column; gap: 8px"><div style="height: 72px; border-radius: 4px; background: #31BD4B"></div><div style="font-size: 14px; color: #383838">Green<br><span style="color: #878787">#31BD4B</span></div></div>
+    </div>
+    <h3 style="margin: 24px 0 0; font-size: 20px; font-weight: 800">Prototypes</h3>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #383838">During the redesign process, I created prototypes that sketched out the functionality or content to align our vision for the new pages I wanted to place after comparing them to the competition. This helped in discussions with stakeholders to determine what we should focus on and whether we had the time and capacity to implement a particular idea.</p>
+  </section>
+
+  <img class="cs-img" src="images/idt-express-website-frame-1.webp" alt="Prototypes: booking, blog and calling cards pages">
+
+  <section style="width: 100%; max-width: 900px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+    <h3 style="margin: 0; font-size: 20px; font-weight: 800">Page design</h3>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #383838">I created more than 80 pages for the IDT Express website, with each one adapted for tablet and mobile devices. Also I tested the developed designs and created a bug report.</p>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #383838">Here are some of the screens for which the redesign was made.</p>
+  </section>
+
+  <img class="cs-img" src="images/idt-express-website-frame-2.webp" alt="Redesigned IDT Express pages">
+
+  <section style="width: 100%; max-width: 900px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+    <h3 style="margin: 0; font-size: 20px; font-weight: 800">Mega menu &amp; Navigation</h3>
+    <ul style="margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 10px; font-size: 17px; line-height: 1.6; color: #383838">
+      <li>I made the new menu more informative for the user, allowing them to quickly understand where they will be directed.</li>
+      <li>Additionally, I added the ability to insert various banners to promote important company materials and events.</li>
+      <li>The navigation has been completely revamped. I reduced the size of the logo to align with the main menu items. Additionally, I added “Log In” and “Get a $25 Credit” buttons as they are important actions on the site, and the entire focus is on the second floor of the menu.</li>
+    </ul>
+  </section>
+
+  <section style="width: 100%; max-width: 900px; margin: 0 auto; padding: 0 20px; box-sizing: border-box"><img class="cs-img cs-content" src="images/idtw-img-2-v2.webp" alt="Navigation and mega menu before and after"></section>
+
+
+  <section style="width: 100%; max-width: 900px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+    <h3 style="margin: 0; font-size: 20px; font-weight: 800">Stir/Shaken verification &amp; Spam Detector</h3>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #383838">Stir/Shaken is a widely-used tool for detecting robotic phone numbers. To enhance user experience, I made:</p>
+    <ul style="margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 10px; font-size: 17px; line-height: 1.6; color: #383838">
+      <li>To reduce confusion with the buttons, the progress bar has been simplified.</li>
+      <li>The content was shortened by eliminating unnecessary tips that were not valuable and diverted users’ attention from the main action.</li>
+      <li>A contact form banner implemented across all screens.</li>
+    </ul>
+  </section>
+
+  <img class="cs-img" src="images/idt-express-website-img-3.webp" alt="Stir/Shaken verification before and after">
+
+
+  <section style="width: 100%; max-width: 900px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+    <h3 style="margin: 0; font-size: 20px; font-weight: 800">Inbound/Outbound calculators</h3>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #383838">Calculators that enable users to calculate call costs across various services have been updated with the option to select countries and change service providers.</p>
+    <ul style="margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 10px; font-size: 17px; line-height: 1.6; color: #383838">
+      <li>The progress bar was simplified so that users would be less confused with the buttons.</li>
+      <li>Added sliders to the fields for entering minutes as an element of interactivity.</li>
+      <li>The table has been simplified with a focus on the end cost. This updated version is highly adaptable and scalable, allowing for the inclusion of additional services in the future. It is also optimized for mobile devices, eliminating the need for excessive scrolling.</li>
+    </ul>
+  </section>
+
+  <img class="cs-img" src="images/idt-express-website-img-4.webp" alt="Outbound calculator before and after">
+
+  <section style="width: 100%; max-width: 900px; margin: 0 auto; padding: 0 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+    <h3 style="margin: 0; font-size: 20px; font-weight: 800">Responsiveness</h3>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #383838">I adapted all of the desktop designs for tablets and mobile devices to reduce bounce rate. Breakpoints were chosen based on Google Analytics, using the most popular resolutions: 1440px, 1024px, 800px, 600px, 428px, 360px.</p>
+    <img class="cs-img cs-content" src="images/idtw-img-5-v2.webp" alt="Breakpoint grids from XL desktop to mobile">
+    <h3 style="margin: 24px 0 0; font-size: 20px; font-weight: 800">Component system</h3>
+    <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #383838">While designing, I also assembled elements with all their states for the components system. This helped to speed up both the design and development processes.</p>
+  </section>
+
+  <img class="cs-img" src="images/idt-express-website-img-6.webp" alt="Icons and UI components">
+
+  <section style="width: 100%; max-width: 900px; margin: 0 auto 40px; padding: 0 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
+    <h2 style="margin: 0; font-size: 30px; font-weight: 800">Outcomes</h2>
+    <div class="metrics-grid" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 48px">
+      <div><div style="font-size: 32px; font-weight: 500">38.5%</div><div style="font-size: 16px; line-height: 1.5; color: #4F4F4F">bounce rate, down from 60% on desktop and 90% on mobile before the redesign.</div></div>
+      <div><div style="font-size: 32px; font-weight: 500">~2×</div><div style="font-size: 16px; line-height: 1.5; color: #4F4F4F">growth in monthly website visits after the redesign.</div></div>
+    </div>
+  </section>
+
+  <section style="background: #C8E1C1; border-radius: 4px; padding: 28px; box-sizing: border-box; display: flex; flex-direction: column; gap: 24px">
+    <h2 style="margin: 0; font-size: 28px; font-weight: 700">Read these next</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 24px">
+      <a href="self-service-portal.html" style="flex: 0 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 14px; text-decoration: none; font-size: 20px; font-weight: 500">
+        <img src="images/idt-express-img-1.webp" alt="IDT Express self-service portal dashboard" style="width: 100%; aspect-ratio: 1.52; object-fit: cover; display: block; border-radius: 4px">
+        <span>Self-service portal →</span>
+      </a>
+      <a href="idt-express-marketing.html" style="flex: 0 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 14px; text-decoration: none; font-size: 20px; font-weight: 500">
+        <img src="images/idt-express-img-2.webp" alt="IDT Express presentation slide" style="width: 100%; aspect-ratio: 1.52; object-fit: cover; display: block; border-radius: 4px">
+        <span>Marketing →</span>
+      </a>
+    </div>
+  </section>
+
+  <footer id="contact" style="background: #1E1E1E; border-radius: 4px; color: #FFFFFF; padding: 32px 28px 28px; box-sizing: border-box; display: flex; flex-direction: column; gap: 96px; margin-top: -48px">
+    <div style="display: flex; flex-direction: column; gap: 12px">
+      <h2 style="margin: 0; font-family: 'Raleway', sans-serif; font-size: 28px; font-weight: 600">Have a project in mind?</h2>
+      <p style="margin: 0; font-size: 18px; line-height: 1.45; font-weight: 300; color: #878787; max-width: 600px">Don’t hesitate to get in touch. I’m currently based in Warsaw, Poland (GMT+2) and open to remote opportunities.</p>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+      <div style="display: flex; flex-wrap: wrap; gap: 56px">
+        <a href="https://www.linkedin.com/in/zayka-aliona/" target="_blank" rel="noopener noreferrer" style="color: #DCEBA6; font-size: 50px; font-weight: 500; text-decoration: none; font-family: 'Raleway', sans-serif; display: flex; align-items: baseline; gap: 14px">LinkedIn <svg aria-hidden="true" width="36" height="36" style="position: relative; top: 6px" viewBox="0 0 36 36" fill="none"><path d="M28 23.3846V8H12.6154M28 8L8 28" stroke="#D7E1A7" stroke-width="4"></path></svg></a>
+        <a href="mailto:[YOUR EMAIL]" style="color: #DCEBA6; font-size: 50px; font-weight: 500; text-decoration: none; font-family: 'Raleway', sans-serif; display: flex; align-items: baseline; gap: 14px">Email <svg aria-hidden="true" width="36" height="36" style="position: relative; top: 6px" viewBox="0 0 36 36" fill="none"><path d="M28 23.3846V8H12.6154M28 8L8 28" stroke="#D7E1A7" stroke-width="4"></path></svg></a>
+      </div>
+      <span style="font-size: 14px; color: #9A9A9A">© 2026</span>
+    </div>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var burger = document.querySelector('.burger');
+  var links = document.querySelector('.nav-links');
+  function setOpen(open){
+    if(!burger||!links) return;
+    if(open){
+      var nav = burger.closest('nav');
+      var vh = Math.min(window.innerHeight||Infinity,(window.visualViewport&&window.visualViewport.height)||Infinity);
+      if(nav&&isFinite(vh)) links.style.setProperty('--mh', Math.max(200, Math.round(vh - Math.max(0, nav.getBoundingClientRect().bottom) - 8)) + 'px');
+    }
+    burger.setAttribute('data-open', String(open));
+    links.setAttribute('data-open', String(open));
+    burger.setAttribute('aria-expanded', String(open));
+  }
+  if(burger) burger.addEventListener('click', function(){ setOpen(burger.getAttribute('data-open') !== 'true'); });
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var el = document.getElementById(a.getAttribute('href').slice(1));
+      if(!el) return;
+      e.preventDefault(); setOpen(false);
+      el.scrollIntoView({behavior:'smooth', block:'start'});
+      history.replaceState(null,'',a.getAttribute('href'));
+    });
+  });
+  window.addEventListener('resize', function(){ if(window.innerWidth > 600) setOpen(false); });
+})();
+</script>
+</body>
+</html>
